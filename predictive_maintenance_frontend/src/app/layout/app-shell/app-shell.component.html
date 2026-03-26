@@ -1,0 +1,17 @@
+<div class="app-root">
+  <app-topbar (toggleSidebar)="toggleSidebarExpanded()"></app-topbar>
+
+  <div class="shell" [class.shell--sidebar-expanded]="sidebarExpanded()">
+    <aside class="sidebar" aria-label="Primary">
+      <app-sidebar-nav [items]="navItems"></app-sidebar-nav>
+    </aside>
+
+    <main class="content" role="main">
+      <router-outlet></router-outlet>
+    </main>
+
+    <aside class="toc" aria-label="On this page">
+      <app-toc [items]="tocItems()"></app-toc>
+    </aside>
+  </div>
+</div>

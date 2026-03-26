@@ -1,0 +1,44 @@
+<header class="doc-header">
+  <h1>Architecture</h1>
+  <p class="subtitle">
+    This documentation describes the core components and deployment considerations for the predictive maintenance management system.
+  </p>
+
+  <div class="pill-row" role="tablist" aria-label="Architecture tabs">
+    <button class="pill pill--active" type="button" role="tab" aria-selected="true">Overview</button>
+    <button class="pill" type="button" role="tab" aria-selected="false">Core components</button>
+    <button class="pill" type="button" role="tab" aria-selected="false">Deployment</button>
+    <button class="pill" type="button" role="tab" aria-selected="false">Testing</button>
+  </div>
+</header>
+
+<section class="section" id="overview">
+  <h2>Overview</h2>
+  <p>
+    The system collects equipment operational data, detects threshold breaches, and generates prioritized alerts and work orders for engineers to action.
+  </p>
+</section>
+
+<section class="section" id="models">
+  <h2>Core components</h2>
+  <ul>
+    <li>Ingestion pipeline for sensor/log data</li>
+    <li>Breach detection and alert prioritization</li>
+    <li>Work order lifecycle management</li>
+    <li>Spare parts verification and tracking</li>
+  </ul>
+</section>
+
+<section class="section" id="deployment">
+  <h2>Deployment</h2>
+  <p>
+    Deploy the API behind a reverse proxy, connect to the database via environment configuration, and host the UI as a static app or via SSR.
+  </p>
+</section>
+
+<section class="section" id="testing">
+  <h2>Testing</h2>
+  <p>
+    Add unit tests for detection rules and integration tests for alert-to-work-order flows. Ensure critical routes are covered and stable under load.
+  </p>
+</section>

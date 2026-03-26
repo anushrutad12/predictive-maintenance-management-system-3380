@@ -1,0 +1,43 @@
+<header class="page-header">
+  <div class="page-title-wrap">
+    <div class="accent-bar" aria-hidden="true"></div>
+    <h1>User Stories</h1>
+  </div>
+  <div class="page-actions" aria-label="Page actions">
+    <!-- reserved for future actions -->
+  </div>
+</header>
+
+<section class="doc-section" id="overview">
+  <h2>Overview</h2>
+  <p>
+    This page documents user stories for the predictive maintenance system. It is presented in a lightweight docs layout with navigation on the left and a
+    per-page table of contents on the right.
+  </p>
+</section>
+
+<section class="doc-section" id="models">
+  <h2>Models</h2>
+  <ul>
+    <li><a href="#">Equipment</a> — registered assets and metadata.</li>
+    <li><a href="#">Alert</a> — breach detection and prioritization.</li>
+    <li><a href="#">Work Order</a> — maintenance workflow tracking.</li>
+  </ul>
+</section>
+
+<section class="doc-section" id="routes">
+  <h2>Routes</h2>
+  <p>Typical API routes (placeholder):</p>
+  <pre><code>GET /api/equipment
+POST /api/alerts
+POST /api/work-orders
+PATCH /api/work-orders/{{ '{' }}id{{ '}' }}</code></pre>
+</section>
+
+<section class="doc-section" id="schemas">
+  <h2>Schemas</h2>
+  <p>
+    Request/response schemas are defined with typed models. Example field:
+    <code>priority</code>, <code>status</code>, <code>assignedTo</code>.
+  </p>
+</section>

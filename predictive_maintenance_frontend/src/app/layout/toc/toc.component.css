@@ -1,0 +1,37 @@
+.toc-title {
+  color: var(--text-muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.toc-list {
+  display: grid;
+  gap: 6px;
+}
+
+.toc-link {
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 6px 8px;
+  border-radius: 6px;
+  text-align: left;
+  color: var(--text-secondary);
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.toc-link:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+}
+
+.toc-link.l2 {
+  padding-left: 18px;
+}
+.toc-link.l3 {
+  padding-left: 28px;
+}

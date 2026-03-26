@@ -1,0 +1,11 @@
+<nav class="toc-nav" aria-label="On this page">
+  <div class="toc-title">On this page</div>
+
+  <div class="toc-list">
+    @for (item of items; track item.id) {
+      <button class="toc-link" type="button" [class.l2]="item.level === 2" [class.l3]="item.level === 3" (click)="scrollTo(item.id)">
+        {{ item.label }}
+      </button>
+    }
+  </div>
+</nav>

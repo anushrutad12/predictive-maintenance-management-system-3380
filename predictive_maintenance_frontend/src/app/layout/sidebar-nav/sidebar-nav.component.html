@@ -1,0 +1,34 @@
+<nav class="nav" aria-label="Sidebar">
+  <div class="nav__top">
+    <div class="nav__workspace">Workspace</div>
+    <a class="nav__cta" [routerLink]="'/docs/user-stories'" routerLinkActive="active">New Chat</a>
+  </div>
+
+  <div class="nav__list">
+    @for (item of items; track item.id) {
+      @if (item.kind === 'group') {
+        <div class="nav-group">
+          <div class="nav-group__title">{{ item.label }}</div>
+          <div class="nav-group__items">
+            @for (child of item.children; track child.id) {
+              <a
+                class="nav-item"
+                [routerLink]="child.route"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >
+                <span class="nav-item__icon" aria-hidden="true"></span>
+                <span class="nav-item__label">{{ child.label }}</span>
+              </a>
+            }
+          </div>
+        </div>
+      } @else {
+        <a class="nav-item" [routerLink]="item.route" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <span class="nav-item__icon" aria-hidden="true"></span>
+          <span class="nav-item__label">{{ item.label }}</span>
+        </a>
+      }
+    }
+  </div>
+</nav>
