@@ -1,0 +1,4 @@
+{
+    "command": "npm start -- --port <port> --host <host>",
+    "working_directory": "/home/kavia/workspace/code-generation/predictive-maintenance-management-system-3380/predictive_maintenance_frontend"
+}

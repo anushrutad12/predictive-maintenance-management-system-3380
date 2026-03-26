@@ -1,0 +1,4 @@
+{
+    "command": "npm install --legacy-peer-deps && npm run build",
+    "working_directory": "/home/kavia/workspace/code-generation/predictive-maintenance-management-system-3380/predictive_maintenance_frontend"
+}
